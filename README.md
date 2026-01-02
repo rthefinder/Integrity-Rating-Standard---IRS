@@ -1,5 +1,7 @@
 # Integrity Rating Standard (IRS)
 
+<img width="845" height="1016" alt="Capture d’écran 2026-01-02 à 16 52 07" src="https://github.com/user-attachments/assets/575366b2-7503-4a72-9c5c-910bc48e1ef9" />
+
 Integrity Rating Standard ($IRS) is a community-driven safety standard and verification framework for Pump.fun launches on Solana. It provides transparent, open-source checks and a public dashboard that outputs a risk score and rating for a token launch.
 
 IMPORTANT LEGAL & USAGE DISCLAIMERS (MUST BE READ):
@@ -127,4 +129,7 @@ Again: IMPORTANT DISCLAIMERS (MUST APPEAR IN UI & DOCS)
 - Not affiliated with the IRS (Internal Revenue Service) or any government entity.
 - Not legal advice and not financial advice.
 - No guarantees of profit, loss prevention, or that any launch is "scam-proof".
-- This tool provides risk signals and checklists only; it does not enforce actions on Pump.fun.
+- This tool provides risk signals and checklists only; it does not e
+
+<img width="1344" height="768" alt="Gemini_Generated_Image_gxdkfdgxdkfdgxdk" src="https://github.com/user-attachments/assets/e71fba3d-ca46-4eb5-8bcb-3847f0409440" />
+nforce actions on Pump.fun.
