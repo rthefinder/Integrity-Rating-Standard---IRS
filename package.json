@@ -1,0 +1,23 @@
+{
+  "name": "integrity-rating-standard",
+  "private": true,
+  "version": "0.1.0",
+  "license": "MIT",
+  "packageManager": "pnpm@8.6.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build --parallel",
+    "lint": "turbo run lint --parallel",
+    "typecheck": "turbo run typecheck --parallel",
+    "test": "turbo run test --parallel",
+    "start": "node ./apps/worker/dist/index.js"
+  },
+  "devDependencies": {
+    "turbo": "^1.11.12",
+    "pnpm": "^8.6.0"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "@irs/db",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "prisma:generate": "prisma generate",
+    "migrate": "prisma migrate dev --name init",
+    "seed": "ts-node --esm prisma/seed.ts"
+  },
+  "dependencies": {
+    "@prisma/client": "4.0.0"
+  },
+  "devDependencies": {
+    "prisma": "4.0.0",
+    "ts-node": "10.0.0",
+    "typescript": "^5.0.0"
+  }
+}

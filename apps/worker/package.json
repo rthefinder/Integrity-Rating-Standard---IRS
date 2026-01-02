@@ -1,0 +1,27 @@
+{
+  "name": "apps-worker",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc -p .",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@irs/crypto": "workspace:*
+",
+    "@irs/rules": "workspace:*
+",
+    "@irs/shared": "workspace:*",
+    "@prisma/client": "^4.0.0",
+    "@solana/web3.js": "^1.76.0",
+    "dotenv": "^16.0.0",
+    "pg": "^8.0.0",
+    "zod": "^3.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "ts-node": "^10.0.0"
+  }
+}

@@ -1,0 +1,49 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model TokenSnapshot {
+  mint                 String  @id
+  updatedAt            DateTime @default(now())
+  mintAuthority        String?
+  freezeAuthority      String?
+  supply               String
+  decimals             Int
+  largestHolders       Json
+  concentrationMetrics Json
+}
+
+model RuleConfig {
+  id           String   @id @default(uuid())
+  version      Int      @unique
+  thresholds   Json
+  knownBadLists Json
+  createdAt    DateTime @default(now())
+}
+
+model IRSReport {
+  id           String   @id @default(uuid())
+  mint         String
+  configVersion Int
+  reportVersion Int
+  score        Int
+  rating       String
+  checklist    Json
+  evidence     Json
+  signature    String
+  signerPubkey String
+  createdAt    DateTime @default(now())
+}
+
+model Flag {
+  id        String   @id @default(uuid())
+  mint      String
+  severity  String
+  reason    String
+  createdAt DateTime @default(now())
+}
